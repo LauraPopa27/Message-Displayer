@@ -3,19 +3,19 @@ const form= document.getElementById('form');
 const firstName= document.getElementById('firstName');
 const lastName= document.getElementById('lastName');
 const message= document.getElementById('message');
-const F= document.getElementById('female');
-const M= document.getElementById('male');
+const female= document.getElementById('female');
+const male= document.getElementById('male');
 
 
 form.addEventListener('submit', e => 
 {
     function gender()
     {
-        if(F.checked=== true)
-            return F.value;
+        if(female.checked=== true)
+            return female.value;
         
-        else if(M.checked=== true)
-            return M.value;
+        else if(male.checked=== true)
+            return male.value;
 
         else
             return 'unknown gender';
